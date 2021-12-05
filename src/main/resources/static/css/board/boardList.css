@@ -1,0 +1,131 @@
+body{
+    width:100%;
+}
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: fixed;
+    left: 300px;
+    top: 130px;
+}
+
+.wrap .table {
+    width: 1300px;
+    height: 600px;
+    /* background-color: orange; */
+    /* margin: 0 auto;
+    margin-top: 150px; */
+
+}
+
+.wrap .table h1 {
+    font-size: 38px;
+    padding: 15px 0 5px 15px;
+}
+
+.wrap .table hr {
+    border: 0;
+    border-top: 1px solid black;
+}
+
+.wrap .table .search {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.wrap .table .search input[type="text"] {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    width: 260px;
+    height: 35px;
+    margin-right: 5px;
+    border-bottom: 1px solid #303030;
+}
+
+.wrap .table .search span {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.wrap .table .search span.add_notice{
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 24px;
+}
+
+.wrap .table .contents .title {
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid black;
+}
+
+.wrap .table .contents {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    table-layout: fixed;
+
+}
+
+.wrap .table .contents td {
+    text-align: center;
+}
+
+.wrap .table .contents .content{
+    margin-top: 10px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.wrap .table .contents .content td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrap .table .contents .content:hover {
+    background-color: #ebebeb;
+}
+
+.wrap .table .page {
+    width: 100%;
+    border-top: 2px solid black;
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.wrap .table .page .pageNum {
+    padding: 10px;
+    color: #252525;
+    cursor: pointer;
+}
+.wrap .table .page .pageNum a.selected{
+    color:#b36868;
+    font-weight: 650;
+}
+
+.wrap .table .page a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.wrap .table .page .material-icons-outlined {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.wrap .table .page .material-icons-outlined.sf{
+    font-size:20px;
+    cursor: pointer;
+
+}

@@ -1,0 +1,56 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap{
+    margin:0 auto;
+    position: absolute;
+    left: 300px;
+    top: 130px;
+}
+
+.table{
+    border: 0;
+    margin-top:20px;
+    text-align: center;
+    margin:0 auto;
+    
+}
+
+table tr{
+    text-align: center;
+    width:100%;
+    border: 0;
+}
+
+table tr.title{
+    background-color: #eee;
+    font-size: 22px;
+    cursor: default;
+}
+
+table tr:hover:not(.title){
+    background-color: #ddd;
+}
+
+table tr td{
+    border: 0;
+    text-align: center;
+}
+
+.pageInfo {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pageInfo a {
+    text-decoration: none;
+    color: black;
+}
+
+span.pageNum{
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
