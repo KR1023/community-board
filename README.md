@@ -1,7 +1,7 @@
 # community-board
 ```
-- MyBatis
-- view-template : JSP
+## MyBatis
+ view-template : JSP
 - back-end : Spring boot 2.6.1
 - DBMS : MySQL 5.6.3
 ```
