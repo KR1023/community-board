@@ -1,6 +1,7 @@
 package mybatis.communityBoard.controller.user;
 
 import lombok.RequiredArgsConstructor;
+import mybatis.communityBoard.dto.account.AddAccountRequestDTO;
 import mybatis.communityBoard.dto.account.ModifyAccountRequestDTO;
 import mybatis.communityBoard.service.account.AccountService;
 import org.springframework.http.HttpStatus;
@@ -29,6 +30,22 @@ public class AccountViewController {
     @GetMapping("/register-form")
     public String registerForm(){
         return "user/addAccount";
+    }
+
+    /**
+     * 회원 가입
+     * @param request
+     * @return
+     */
+    @PostMapping("/addAccount")
+    public String addAccount(HttpServletRequest request){
+        String userId = request.getParameter("userId");
+        String userPwd = request.getParameter("userPwd");
+        String username = request.getParameter("username");
+        String email = request.getParameter("email");
+        accountService.addAccount(new AddAccountRequestDTO(userId, userPwd, username, email));
+
+        return "redirect:/account/login-form";
     }
 
     /**

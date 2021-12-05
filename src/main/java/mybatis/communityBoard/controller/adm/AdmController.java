@@ -68,21 +68,6 @@ public class AdmController {
         return "account/addAccount";
     }
 
-    /**
-     * 회원 가입
-     * @param request
-     * @return
-     */
-    @PostMapping("/addAccount")
-    public String addAccount(HttpServletRequest request){
-        String userId = request.getParameter("userId");
-        String userPwd = request.getParameter("userPwd");
-        String username = request.getParameter("username");
-        String email = request.getParameter("email");
-        accountService.addAccount(new AddAccountRequestDTO(userId, userPwd, username, email));
-
-        return "redirect:/account/login-form";
-    }
 
     /**
      * 관리자 로그인 폼
