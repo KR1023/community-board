@@ -94,7 +94,7 @@
 <body>
 <div class="wrap">
     <h1>회원 가입</h1>
-    <form action="/adm/account/addAccount" method="post" name="registerForm">
+    <form action="/account/addAccount" method="post" name="registerForm">
         <table align="center">
             <tr>
                 <td>아이디</td>

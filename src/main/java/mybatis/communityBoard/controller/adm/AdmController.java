@@ -1,7 +1,6 @@
 package mybatis.communityBoard.controller.adm;
 
 import lombok.RequiredArgsConstructor;
-import mybatis.communityBoard.dto.account.AddAccountRequestDTO;
 import mybatis.communityBoard.dto.board.AddBoardRequestDTO;
 import mybatis.communityBoard.dto.board.ModifyBoardRequestDTO;
 import mybatis.communityBoard.service.account.AccountService;
@@ -57,17 +56,6 @@ public class AdmController {
         model.addAttribute("account", accountService.detailAccount(id));
         return "adm/account/detailAccount";
     }
-
-
-    /**
-     * 회원 가입 폼
-     * @return
-     */
-    @GetMapping("/register-form")
-    public String addAccount(){
-        return "account/addAccount";
-    }
-
 
     /**
      * 관리자 로그인 폼
